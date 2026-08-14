@@ -1,15 +1,15 @@
-nama = "rizki"
-kampus = "Universitas Negeri Malang"
-jam_per_hari = 24
-hari_per_minggu = 7
-total_jam = jam_per_hari * hari_per_minggu
+while True:
+    print("Kalkulator")
+    list_operasi = ("+ atau tambah", "- atau kurang", "x atau perkalian", ": atau pembagian", "^ atau pangkat", "EXIT")
+    for i, pilih_operasi in enumerate(list_operasi, start=1):
+        print(f"Yang bisa dilakukan: {i}. {pilih_operasi}")
+    pilihan = int(input("Pilih:"))
+    if pilihan == 1:
+        angka1 = float(input("Angka pertama:"))
+        angka2 = float(input("Angka kedua:"))
+        hasil = angka1 + angka2
+        print(f"{angka1} + {angka2} hasilnya= {hasil}")
+        break 
 
-print(nama)
-print(kampus)
-print(jam_per_hari)
-print(hari_per_minggu)
-print(total_jam)
 
-jam_per_hari = 19
-total_jam = jam_per_hari * hari_per_minggu
-print(total_jam)
+   
