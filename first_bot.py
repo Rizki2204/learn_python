@@ -1,0 +1,7 @@
+def tambah(a, b):
+    return a + b
+a = float(input("Masukan angka pertama: "))
+b = float(input("Masukan angka kedua: "))
+penjumlahan = tambah(a, b)
+print(f"Hasil penjumlahan = {penjumlahan}")
+
