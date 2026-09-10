@@ -7,7 +7,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def about(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Hai, dengan siapa disini?")    
 
-app = ApplicationBuilder().token("8272041378:AAHRbaKhjQsdd1QwGQWhp0_ccYXOiGTLSDU").build()
+app = ApplicationBuilder().token("Your Token").build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CommandHandler("about", about))
 app.run_polling()
